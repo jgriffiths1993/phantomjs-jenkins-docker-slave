@@ -27,7 +27,7 @@ RUN apt-get -y --force-yes update &&\
     git clone http://github.com/ariya/phantomjs.git &&\
     cd phantomjs &&\
     git checkout 2.0 &&\
-    ./build.sh &&\
+    ./build.sh --confirm &&\
     cp bin/phantomjs /usr/local/bin/phantomjs &&\
     cd .. &&\
     rm -rf phantomjs
