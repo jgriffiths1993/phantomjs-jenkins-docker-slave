@@ -5,7 +5,7 @@ ENV INITRD no
 ENV HOME /root
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN ln -sf /bin/true /use/bin/ischroot &&\
+RUN ln -sf /bin/true /usr/bin/ischroot &&\
     ln -sf /bin/true /sbin/initctl
 
 ADD bin/pidone /sbin/pidone
