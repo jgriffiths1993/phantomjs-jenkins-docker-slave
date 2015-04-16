@@ -26,7 +26,7 @@ RUN apt-get -y --force-yes update &&\
     echo 'jenkins ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers &&\
     git clone http://github.com/ariya/phantomjs.git &&\
     cd phantomjs &&\
-    git checkout 2.0 &&\
+    git checkout 1.9 &&\
     ./build.sh --confirm &&\
     cp bin/phantomjs /usr/local/bin/phantomjs &&\
     cd .. &&\
